@@ -7,7 +7,7 @@ class Config {
     static String[] alternatives = new String[]{"End User-1", "End User-2", "End User-3", "Fog Node-1", "Fog Node-2", "Fog Node-3", "Cloud-1", "Cloud-2", "Cloud-3"};
 
     // Set your criteria here
-    static String[] criteria = new String[]{"Task Length", "Virtual Machine Utilisation", "Delay Sesitivity", "Network Demand", "Energy Consumption"};
+    static String[] criteria = new String[]{"Network Bandwidth", "CPU Speed", "VM Utilisation", "Energy Efficiency", "Cost"};
 
     // Set true for benefit criterion, false for cost criterion
     static boolean[] costCriteria = new boolean[]{false, false, false, false, true}; // price is cost
