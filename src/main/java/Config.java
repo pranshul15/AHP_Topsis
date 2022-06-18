@@ -4,7 +4,7 @@ class Config {
 
     // Set your alternatives here
 //    static String[] alternatives = new String[]{"Mobile", "Edge", "Public"};
-    static String[] alternatives = new String[]{"End User-1", "End User-2", "End User-3", "Fog Node-1", "Fog Node-2", "Fog Node-3", "Cloud-1", "Cloud-2", "Cloud-3"};
+    static String[] alternatives = new String[]{"End Device-1", "End Device-2", "End Device-3", "Fog Node-1", "Fog Node-2", "Fog Node-3", "Cloud-1", "Cloud-2", "Cloud-3"};
 
     // Set your criteria here
     static String[] criteria = new String[]{"Network Bandwidth", "CPU Speed", "VM Utilisation", "Energy Efficiency", "Cost"};
@@ -15,16 +15,7 @@ class Config {
     static Double[] ahpWeights = new Double[Config.criteria.length];
 
     // AHP criteria weights in respect to each other
-//    static final Double BANDWIDTH_SPEED = 1.0;
-//    static final Double BANDWIDTH_AVAILABILITY = 5.0;
-//    static final Double BANDWIDTH_SECURITY = 7.0;
-//    static final Double BANDWIDTH_PRICE = 9.0;
-//    static final Double SPEED_AVAILABILITY = 5.0;
-//    static final Double SPEED_SECURITY = 6.0;
-//    static final Double SPEED_PRICE = 8.0;
-//    static final Double AVAILABLITY_SECURITY = 3.0;
-//    static final Double AVAIALABILITY_PRICE = 3.0;
-//    static final Double SECURITY_PRICE = 2.0;
+
     static final Double NETWORKBANDWIDTH_CPUSPEED = 1.0;
     static final Double NETWORKBANDWIDTH_AVAILABILITY = 5.0;
     static final Double NETWORKBANDWIDTH_VMUTILISATION = 7.0;
@@ -38,11 +29,7 @@ class Config {
     
     // The following values are obtained in profiling stage prior to offloading
     // Here, we just use static fuzzy values for each alternative
-//    static final Fuzzy MOBILE_NETWORKBANDWIDTH = Fuzzy.VERY_HIGH;
-//    static final Fuzzy MOBILE_SPEED = Fuzzy.GOOD;
-//    static final Fuzzy MOBILE_AVAILABILITY = Fuzzy.HIGH;
-//    static final Fuzzy MOBILE_SECURITY = Fuzzy.HIGH;
-//    static final Fuzzy MOBILE_PRICE = Fuzzy.VERY_LOW;
+
     static final Fuzzy ENDUSER_NETWORKBANDWIDTH = Fuzzy.VERY_HIGH;
     static final Fuzzy ENDUSER_CPUSPEED = Fuzzy.GOOD;
     static final Fuzzy ENDUSER_VMUTILISATION = Fuzzy.HIGH;

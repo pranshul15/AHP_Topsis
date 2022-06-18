@@ -7,19 +7,19 @@ public class Test {
         double[] compArray = ahp.getPairwiseComparisonArray();
 
         // Set the pairwise comparison values
-//        compArray[0] = Config.BANDWIDTH_SPEED;
-//        compArray[1] = Config.BANDWIDTH_AVAILABILITY;
-//        compArray[2] = Config.BANDWIDTH_SECURITY;
-//        compArray[3] = Config.BANDWIDTH_PRICE;
-//        compArray[4] = Config.SPEED_AVAILABILITY;
-//        compArray[5] = Config.SPEED_SECURITY;
-//        compArray[6] = Config.SPEED_PRICE;
-//        compArray[7] = Config.AVAILABLITY_SECURITY;
-//        compArray[8] = Config.AVAIALABILITY_PRICE;
-//        compArray[9] = Config.SECURITY_PRICE;
+//        compArray[0] = Config.NETWORKBANDWIDTH_CPUSPEED;
+//        compArray[1] = Config.NETWORKBANDWIDTH_VMUTILISATION;
+//        compArray[2] = Config.NETWORKBANDWIDTH_ENERGYEFFECIENCY;
+//        compArray[3] = Config.NETWORKBANDWIDTH_COST;
+//        compArray[4] = Config.CPUSPEED_VMUTILISATION;
+//        compArray[5] = Config.CPUSPEED_ENERGYEFFECIENCY;
+//        compArray[6] = Config.CPUSPEED_COST;
+//        compArray[7] = Config.VMUTILISATION_ENERGYEFFECIENCY;
+//        compArray[8] = Config.VMUTILISATION_COST;
+//        compArray[9] = Config.ENERGYEFFICIENCY_COST;
 
-        double[] dm = {1.0, 5.0, 7.0, 9.0, 5.0, 6.0, 8.0, 3.0, 3.0, 2.0}; // DM1
-//        double[] dm = {5.0, 7.0, 9.0, 9.0, 3.0, 7.0, 7.0, 5.0, 5.0, 1.0}; // DM2
+//        double[] dm = {1.0, 5.0, 7.0, 9.0, 5.0, 6.0, 8.0, 3.0, 3.0, 2.0}; // DM1
+        double[] dm = {5.0, 7.0, 9.0, 9.0, 3.0, 7.0, 7.0, 5.0, 5.0, 1.0}; // DM2
 //        double[] dm = {1.0/7.0, 1.0/5.0, 5.0, 5.0, 3.0, 9.0, 9.0, 9.0, 9.0, 1.0}; // DM3
 //        double[] dm = {1.0, 1.0, 1.0/9.0, 3.0, 3.0, 1.0/9.0, 3.0, 1.0/9.0, 3.0, 9.0}; // DM4
 //        double[] dm = {1.0, 3.0, 3.0, 1.0/9.0, 3.0, 3.0, 1.0/9.0, 3.0, 1.0/9.0, 1.0/9.0}; // DM5
