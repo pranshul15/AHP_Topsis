@@ -251,7 +251,7 @@ class Topsis {
             cStar.put(c, dPlusEntry.getKey());
         }
 
-//        System.out.println("closeness coefficient set is: " + cStar);
+        System.out.println("closeness coefficient set is: " + cStar);
 
         return cStar;
     }

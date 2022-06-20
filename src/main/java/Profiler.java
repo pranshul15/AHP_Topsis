@@ -31,90 +31,137 @@ class Profiler {
 
         //End Device-1
         if (node.equalsIgnoreCase(Config.alternatives[0])) {
+            siteCriteria.add(Fuzzy.VERY_LOW);
+            siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.GOOD);
-            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.VERY_LOW);
         }
 
         //End Device-2
         else if (node.equalsIgnoreCase(Config.alternatives[1])) {
+            siteCriteria.add(Fuzzy.VERY_LOW);
+            siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.VERY_LOW);
         }
 
         //End Device-3
         else if (node.equalsIgnoreCase(Config.alternatives[2])) {
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.VERY_LOW);
         }
 
         //End Device-4
+        else if (node.equalsIgnoreCase(Config.alternatives[3])) {
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.LOW);
+        }
+        //End Device-5
+        else if (node.equalsIgnoreCase(Config.alternatives[4])) {
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.LOW);
+        }
         
         //Fog-1
-        else if (node.equalsIgnoreCase(Config.alternatives[3])) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.GOOD);
+        else if (node.equalsIgnoreCase(Config.alternatives[5])) {
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
         }
 
         //Fog-2
-        else if (node.equalsIgnoreCase(Config.alternatives[4])) {
+        else if (node.equalsIgnoreCase(Config.alternatives[6])) {
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.GOOD);
+            siteCriteria.add(Fuzzy.LOW);
         }
 
         //Fog-3
-        else if (node.equalsIgnoreCase(Config.alternatives[5])) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
+        else if (node.equalsIgnoreCase(Config.alternatives[7])) {
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.AVERAGE);
         }
         
         //Fog-4
-
-        //Cloud-1
-        else if (node.equalsIgnoreCase(Config.alternatives[6])) {
+        else if (node.equalsIgnoreCase(Config.alternatives[8])) {
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.HIGH);
+        }
+        
+        //Fog-5
+        else if (node.equalsIgnoreCase(Config.alternatives[9])) {
+            siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.GOOD);
+            siteCriteria.add(Fuzzy.HIGH);
+        }
+
+        //Cloud-1
+        else if (node.equalsIgnoreCase(Config.alternatives[10])) {
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.LOW);
+            siteCriteria.add(Fuzzy.HIGH);
         }
 
         //Cloud-2
-        else if (node.equalsIgnoreCase(Config.alternatives[7])) {
-            siteCriteria.add(Fuzzy.GOOD);
+        else if (node.equalsIgnoreCase(Config.alternatives[11])) {
             siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
         }
 
         //Cloud-3
-        else if (node.equalsIgnoreCase(Config.alternatives[8])) {
+        else if (node.equalsIgnoreCase(Config.alternatives[12])) {
+            siteCriteria.add(Fuzzy.HIGH);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.HIGH);
         }
         
         //Cloud-4
+        else if (node.equalsIgnoreCase(Config.alternatives[13])) {
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.VERY_LOW);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+        }
+        
+        //Cloud-5
+        else if (node.equalsIgnoreCase(Config.alternatives[14])) {
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+            siteCriteria.add(Fuzzy.AVERAGE);
+            siteCriteria.add(Fuzzy.VERY_LOW);
+            siteCriteria.add(Fuzzy.VERY_HIGH);
+        }
 
         return siteCriteria;
     }
