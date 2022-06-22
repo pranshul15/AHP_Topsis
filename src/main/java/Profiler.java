@@ -30,7 +30,7 @@ class Profiler {
         ArrayList<Fuzzy> siteCriteria = new ArrayList<>();
 
         //End Device-1
-        if (node.equalsIgnoreCase(Config.alternatives[0])) {
+        if (node.equals("End Device-1")) {
             siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
@@ -39,7 +39,7 @@ class Profiler {
         }
 
         //End Device-2
-        else if (node.equalsIgnoreCase(Config.alternatives[1])) {
+        else if (node.equals("End Device-2")) {
             siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
@@ -48,7 +48,7 @@ class Profiler {
         }
 
         //End Device-3
-        else if (node.equalsIgnoreCase(Config.alternatives[2])) {
+        else if (node.equals("End Device-3")) {
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.VERY_LOW);
             siteCriteria.add(Fuzzy.VERY_HIGH);
@@ -57,7 +57,7 @@ class Profiler {
         }
 
         //End Device-4
-        else if (node.equalsIgnoreCase(Config.alternatives[3])) {
+        else if (node.equals("End Device-4")) {
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
@@ -65,7 +65,7 @@ class Profiler {
             siteCriteria.add(Fuzzy.LOW);
         }
         //End Device-5
-        else if (node.equalsIgnoreCase(Config.alternatives[4])) {
+        else if (node.equals("End Device-5")) {
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
@@ -74,7 +74,7 @@ class Profiler {
         }
         
         //Fog-1
-        else if (node.equalsIgnoreCase(Config.alternatives[5])) {
+        else if (node.equals("Fog Node-1")) {
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
@@ -83,7 +83,7 @@ class Profiler {
         }
 
         //Fog-2
-        else if (node.equalsIgnoreCase(Config.alternatives[6])) {
+        else if (node.equals("Fog Node-2")) {
             siteCriteria.add(Fuzzy.AVERAGE);
             siteCriteria.add(Fuzzy.LOW);
             siteCriteria.add(Fuzzy.HIGH);
@@ -92,7 +92,7 @@ class Profiler {
         }
 
         //Fog-3
-        else if (node.equalsIgnoreCase(Config.alternatives[7])) {
+        else if (node.equals("Fog Node-3")) {
             siteCriteria.add(Fuzzy.AVERAGE);
             siteCriteria.add(Fuzzy.AVERAGE);
             siteCriteria.add(Fuzzy.AVERAGE);
@@ -101,7 +101,7 @@ class Profiler {
         }
         
         //Fog-4
-        else if (node.equalsIgnoreCase(Config.alternatives[8])) {
+        else if (node.equals("Fog Node-4")) {
             siteCriteria.add(Fuzzy.AVERAGE);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.AVERAGE);
@@ -110,7 +110,7 @@ class Profiler {
         }
         
         //Fog-5
-        else if (node.equalsIgnoreCase(Config.alternatives[9])) {
+        else if (node.equals("Fog Node-5")) {
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
@@ -119,7 +119,7 @@ class Profiler {
         }
 
         //Cloud-1
-        else if (node.equalsIgnoreCase(Config.alternatives[10])) {
+        else if (node.equals("Cloud-1")) {
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
@@ -128,7 +128,7 @@ class Profiler {
         }
 
         //Cloud-2
-        else if (node.equalsIgnoreCase(Config.alternatives[11])) {
+        else if (node.equals("Cloud-2")) {
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.LOW);
@@ -137,7 +137,7 @@ class Profiler {
         }
 
         //Cloud-3
-        else if (node.equalsIgnoreCase(Config.alternatives[12])) {
+        else if (node.equals("Cloud-3")) {
             siteCriteria.add(Fuzzy.HIGH);
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.LOW);
@@ -146,7 +146,7 @@ class Profiler {
         }
         
         //Cloud-4
-        else if (node.equalsIgnoreCase(Config.alternatives[13])) {
+        else if (node.equals("Cloud-4")) {
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.AVERAGE);
@@ -155,7 +155,7 @@ class Profiler {
         }
         
         //Cloud-5
-        else if (node.equalsIgnoreCase(Config.alternatives[14])) {
+        else if (node.equals("Cloud-5")) {
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.VERY_HIGH);
             siteCriteria.add(Fuzzy.AVERAGE);

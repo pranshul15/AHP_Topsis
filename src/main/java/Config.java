@@ -1,12 +1,11 @@
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 class Config {
 
-    // Set your alternatives here
 //    static String[] alternatives = new String[]{"End Device", "Fog Node", "Cloud"};
-    static String[] alternatives = new String[]{"End Device-1", "End Device-2", "End Device-3", "End Device-4", "End Device-5",
-    											"Fog Node-1", "Fog Node-2", "Fog Node-3", "Fog Node-4", "Fog Node-5",
-    											"Cloud-1", "Cloud-2", "Cloud-3", "Cloud-4", "Cloud-5"};
+    static List<String> alternatives = new ArrayList<String>();
 
     // Set your criteria here
     static String[] criteria = new String[]{"Network Bandwidth", "CPU Speed", "VM Utilisation", "Energy Efficiency", "Cost"};
@@ -23,32 +22,11 @@ class Config {
     static final Double NETWORKBANDWIDTH_ENERGYEFFICIENCY = 7.0;
     static final Double NETWORKBANDWIDTH_COST = 9.0;
     static final Double CPUSPEED_VMUTILISATION = 5.0;
-    static final Double CPUSPEED_SECURITY = 6.0;
+    static final Double CPUSPEED_ENERGYEFFICIENCY = 6.0;
     static final Double CPUSPEED_COST = 8.0;
     static final Double VMUTILISATION_ENERGYEFFICIENCY = 3.0;
     static final Double VMUTILISATION_PRICE = 3.0;
     static final Double ENERGYEFFICIENCY_COST = 2.0;
-    
-    // The following values are obtained in profiling stage prior to offloading
-    // Here, we just use static fuzzy values for each alternative
-
-//    static final Fuzzy ENDUSER_NETWORKBANDWIDTH = Fuzzy.VERY_HIGH;
-//    static final Fuzzy ENDUSER_CPUSPEED = Fuzzy.GOOD;
-//    static final Fuzzy ENDUSER_VMUTILISATION = Fuzzy.HIGH;
-//    static final Fuzzy ENDUSER_ENERGYEFFICIENCY = Fuzzy.HIGH;
-//    static final Fuzzy ENDUSER_COST = Fuzzy.VERY_LOW;
-//    
-//    static final Fuzzy FOG_NETWORKBANDWIDTH = Fuzzy.VERY_HIGH;
-//    static final Fuzzy FOG_CPUSPEED = Fuzzy.HIGH;
-//    static final Fuzzy FOG_VMUTILISATION = Fuzzy.HIGH;
-//    static final Fuzzy FOG_ENERGYEFFICIENCY = Fuzzy.HIGH;
-//    static final Fuzzy FOG_COST = Fuzzy.LOW;
-//
-//    static final Fuzzy CLOUD_NETWORKBANDWIDTH = Fuzzy.LOW;
-//    static final Fuzzy CLOUD_CPUSPEED = Fuzzy.VERY_HIGH;
-//    static final Fuzzy CLOUD_VMUTILISATION = Fuzzy.VERY_HIGH;
-//    static final Fuzzy CLOUD_ENERGYEFFICIENCY = Fuzzy.GOOD;
-//    static final Fuzzy CLOUD_COST = Fuzzy.VERY_HIGH;
 
     // These values can also be computed from max and min of weighted decision matrix
     static double[] idealSolution = {0.75, 1.0, 1.0};
@@ -57,4 +35,12 @@ class Config {
     // Number of decimal points for float number formatting
     static DecimalFormat df = new DecimalFormat("0.0000");
 
+    
+    static void setAlternatives(int noOfCloudNodes,int noOfFogNodes, int noOfEndDevices) {
+    	List<String> tempAlternatives = new ArrayList<String>();
+    	for(int i=1;i<=noOfEndDevices;i++) tempAlternatives.add("End Device-" + String.valueOf(i));
+    	for(int i=1;i<=noOfFogNodes  ;i++) tempAlternatives.add("Fog Node-" + String.valueOf(i));
+    	for(int i=1;i<=noOfCloudNodes;i++) tempAlternatives.add("Cloud-" + String.valueOf(i));
+    	alternatives = tempAlternatives;
+    }
 }

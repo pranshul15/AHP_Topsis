@@ -18,7 +18,7 @@ class Topsis {
         availableSites = p.start();
 
         sitesMatrix = transformToFuzzyValues(availableSites);
-        // Uncomment below if you want to normalise the Fuzzy values
+        // Uncomment below if you want to normalize the Fuzzy values
 //        TreeMap<String, ArrayList<Double>> normalisedSitesMatrix = calculateNormalisedFuzzyMatrix(sitesMatrix);
         TreeMap<String, ArrayList<Double>> normalisedWeightedFuzzyMatrix = calculateWeightedFuzzyMatrix(sitesMatrix);
 
@@ -242,15 +242,16 @@ class Topsis {
      * @return map of the alternatives with their relative closeness coefficient score
      */
     private TreeMap<Double, String> calculateRelativeCloseness(TreeMap<String, Double> dPlusList, TreeMap<String, Double> dMinusList) {
-
+    	
         TreeMap<Double, String> cStar = new TreeMap<>(Collections.<Double>reverseOrder());
 
         for (Map.Entry<String,Double> dPlusEntry: dPlusList.entrySet()) {
             // c* = d- / (d- + d+)
             double c = dMinusList.get(dPlusEntry.getKey()) / (dMinusList.get(dPlusEntry.getKey()) + dPlusEntry.getValue());
             cStar.put(c, dPlusEntry.getKey());
+            System.out.println("Count: "+dPlusEntry.getKey()+" "+dPlusEntry.getValue());
         }
-
+        
         System.out.println("closeness coefficient set is: " + cStar);
 
         return cStar;
