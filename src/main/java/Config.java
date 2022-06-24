@@ -4,8 +4,8 @@ import java.util.List;
 
 class Config {
 
-//    static String[] alternatives = new String[]{"End Device", "Fog Node", "Cloud"};
-    static List<String> alternatives = new ArrayList<String>();
+    static String[] alternatives = new String[]{"End Device", "Fog Node", "Cloud"};
+//    static String[] alternatives = new ArrayList<String>();
 
     // Set your criteria here
     static String[] criteria = new String[]{"Network Bandwidth", "CPU Speed", "VM Utilisation", "Energy Efficiency", "Cost"};
@@ -34,13 +34,4 @@ class Config {
 
     // Number of decimal points for float number formatting
     static DecimalFormat df = new DecimalFormat("0.0000");
-
-    
-    static void setAlternatives(int noOfCloudNodes,int noOfFogNodes, int noOfEndDevices) {
-    	List<String> tempAlternatives = new ArrayList<String>();
-    	for(int i=1;i<=noOfEndDevices;i++) tempAlternatives.add("End Device-" + String.valueOf(i));
-    	for(int i=1;i<=noOfFogNodes  ;i++) tempAlternatives.add("Fog Node-" + String.valueOf(i));
-    	for(int i=1;i<=noOfCloudNodes;i++) tempAlternatives.add("Cloud-" + String.valueOf(i));
-    	alternatives = tempAlternatives;
-    }
 }

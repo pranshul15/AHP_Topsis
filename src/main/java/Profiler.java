@@ -29,139 +29,163 @@ class Profiler {
 
         ArrayList<Fuzzy> siteCriteria = new ArrayList<>();
 
-        //End Device-1
-        if (node.equals("End Device-1")) {
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-        }
-
-        //End Device-2
-        else if (node.equals("End Device-2")) {
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-        }
-
-        //End Device-3
-        else if (node.equals("End Device-3")) {
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-        }
-
-        //End Device-4
-        else if (node.equals("End Device-4")) {
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-        }
-        //End Device-5
-        else if (node.equals("End Device-5")) {
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
+        if (node.equals("End Device")) {
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
         }
         
-        //Fog-1
-        else if (node.equals("Fog Node-1")) {
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-        }
-
-        //Fog-2
-        else if (node.equals("Fog Node-2")) {
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-        }
-
-        //Fog-3
-        else if (node.equals("Fog Node-3")) {
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.AVERAGE);
+        else if(node.equals("Fog Node")) {
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
         }
         
-        //Fog-4
-        else if (node.equals("Fog Node-4")) {
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
+        else if(node.equals("Cloud")) {
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
+        	siteCriteria.add(Fuzzy.AVERAGE);
         }
         
-        //Fog-5
-        else if (node.equals("Fog Node-5")) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-        }
-
-        //Cloud-1
-        else if (node.equals("Cloud-1")) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-        }
-
-        //Cloud-2
-        else if (node.equals("Cloud-2")) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-        }
-
-        //Cloud-3
-        else if (node.equals("Cloud-3")) {
-            siteCriteria.add(Fuzzy.HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.LOW);
-            siteCriteria.add(Fuzzy.HIGH);
-        }
-        
-        //Cloud-4
-        else if (node.equals("Cloud-4")) {
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-        }
-        
-        //Cloud-5
-        else if (node.equals("Cloud-5")) {
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-            siteCriteria.add(Fuzzy.AVERAGE);
-            siteCriteria.add(Fuzzy.VERY_LOW);
-            siteCriteria.add(Fuzzy.VERY_HIGH);
-        }
+//        //End Device-1
+//        if (node.equals("End Device-1")) {
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//        }
+//
+//        //End Device-2
+//        else if (node.equals("End Device-2")) {
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//        }
+//
+//        //End Device-3
+//        else if (node.equals("End Device-3")) {
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//        }
+//
+//        //End Device-4
+//        else if (node.equals("End Device-4")) {
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//        }
+//        //End Device-5
+//        else if (node.equals("End Device-5")) {
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//        }
+//        
+//        //Fog-1
+//        else if (node.equals("Fog Node-1")) {
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//        }
+//
+//        //Fog-2
+//        else if (node.equals("Fog Node-2")) {
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//        }
+//
+//        //Fog-3
+//        else if (node.equals("Fog Node-3")) {
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//        }
+//        
+//        //Fog-4
+//        else if (node.equals("Fog Node-4")) {
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//        }
+//        
+//        //Fog-5
+//        else if (node.equals("Fog Node-5")) {
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//        }
+//
+//        //Cloud-1
+//        else if (node.equals("Cloud-1")) {
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//        }
+//
+//        //Cloud-2
+//        else if (node.equals("Cloud-2")) {
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//        }
+//
+//        //Cloud-3
+//        else if (node.equals("Cloud-3")) {
+//            siteCriteria.add(Fuzzy.HIGH);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.LOW);
+//            siteCriteria.add(Fuzzy.HIGH);
+//        }
+//        
+//        //Cloud-4
+//        else if (node.equals("Cloud-4")) {
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//        }
+//        
+//        //Cloud-5
+//        else if (node.equals("Cloud-5")) {
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//            siteCriteria.add(Fuzzy.AVERAGE);
+//            siteCriteria.add(Fuzzy.VERY_LOW);
+//            siteCriteria.add(Fuzzy.VERY_HIGH);
+//        }
 
         return siteCriteria;
     }
